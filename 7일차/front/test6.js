@@ -6,9 +6,11 @@ function fetchData(callback){
     },1000);
 }
 
-fetchData(function(data){
+fetchData(f);
+
+let f = function(data){
     console.log("데이터 도착>>" + data);
-});
+}
 
 fetchData(function(data){
     console.log("새로운 데이터>>" + data);
